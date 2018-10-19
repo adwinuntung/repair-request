@@ -23,4 +23,10 @@ class History extends CI_Controller{
 		$this->load->view('v_history', $data);
 	}
 
+	function filter_date()
+	{
+		
+	}
+
+
 }

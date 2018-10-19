@@ -22,7 +22,7 @@ class Process extends CI_Controller{
   {
     $data['get_data'] = $this->adwincekallcase->get_all_not_in($this->table, "Selesai");
 
-    $data['title']='Process Request';
+    $data['title']='Process Repair Request';
 		$this->load->view('v_process', $data);
 	}
 

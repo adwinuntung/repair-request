@@ -7,7 +7,7 @@
 
 <?php $this->load->view('menu'); ?>
 
-<?php foreach($get_data as $row): ?>
+<?php foreach($get_data->result() as $row): ?>
     <form action="<?php echo base_url(). 'process/process_edit'; ?>" method="post">
         <table style="margin:20px auto;">
             <tr>
@@ -32,7 +32,7 @@
             </tr>
             <tr>
               <td></td>
-              <input type="hidden" name="id" value="<?php echo set_value('id',$row->id); ?>" />
+              <input type="hidden" name="id" value="<?=$row->id; ?>" />
               <td><input type="submit" value="Proccess"></td>
             </tr>
         </table>
