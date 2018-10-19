@@ -1,0 +1,15 @@
+#menu{padding: 25px 0;border-bottom: 3px solid;width: 100%;}
+#menu ul li{float: left; margin: 0 20px;list-style-type: none;}
+a{text-decoration: none;font-weight: bold;}
+
+
+.box{}
+  .box .wrap-box.title{font-weight: bold}
+  .box .wrap-box{position: relative;clear: both;width: 100%;}
+    .box .wrap-box .list-box{margin: 10px 20px;float: left;width: 20%;}
+
+
+    .box .wrap-box .list-box-request{margin: 10px 20px;float: left;width: 15%;}
+    .box .wrap-box .list-box-process{margin: 10px 20px;float: left;width: 12%;}
+    .box .wrap-box .list-box-history{margin: 10px 20px;float: left;width: 8%;}
+.menu_crud a{padding: 25px;}
