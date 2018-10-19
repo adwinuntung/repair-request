@@ -158,6 +158,16 @@ class Adwincekallcase {
         return $values;
     }
 
+    function get_all_by_range_date($table,$field,$where_form,$where_to)
+    {
+        $condition = $field ." BETWEEN " . "'" . $where_form . "'" . " AND " . "'" . $where_to . "'";
+        $this->_ci->db->where('status', 'Selesai');
+        $this->_ci->db->where($condition);
+        $value = $this->_ci->db->get($table);
+        $values = $value;
+        return $values;
+    }
+
     function get_detail_by_id_active($table,$id,$table_idname)
     {
         $this->_ci->db->where('status', 2);

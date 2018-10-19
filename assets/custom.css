@@ -13,3 +13,5 @@ a{text-decoration: none;font-weight: bold;}
     .box .wrap-box .list-box-process{margin: 10px 20px;float: left;width: 12%;}
     .box .wrap-box .list-box-history{margin: 10px 20px;float: left;width: 8%;}
 .menu_crud a{padding: 25px;}
+
+.filter_history .separator{float: left;margin:5px;}
